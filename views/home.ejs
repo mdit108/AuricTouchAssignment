@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fantasy Football</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.2.0/mdb.min.css" rel="stylesheet" /> -->
+    <!-- <link rel="stylesheet" href="https://cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.2.4/css/buttons.dataTables.min.css">
+    <link rel="stylesheet" href="./datatables2.min.css">
+    <link rel="stylesheet" href="./home.css">
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <img src="./logo2.png" width="30" height="30" class="mr-2 d-inline-block align-top"
+                alt="">
+            Fantasy Football
+        </a>
+    </nav>
+    <div class="container-fluid content">
+        <div class="options">
+            <select name="" id="op">
+                <option value="" disabled selected hidden>Select Operator</option>
+            </select>
+            <select name="" id="gt">
+                <option value="" disabled selected hidden>Select Game Type</option>
+            </select>
+            <select name="" id="name">
+                <option value="" disabled selected hidden>Select Slate Name</option>
+            
+            </select>
+        </div>
+        <div class="data">
+            <div class="table">
+                <table id="dtBasicExample" class="table table-sm table-hover table-dark" cellspacing="0" width="100%">
+                    <thead>
+                        <tr>
+                            <th class="th-sm">Name
+                
+                            </th>
+                            <th class="th-sm">Team
+                
+                            </th>
+                            <th class="th-sm">Position
+                
+                            </th>
+                            <th class="th-sm">Salary
+                
+                            </th>
+                            <th class="th-sm">Points
+                
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody id="table_body">
+                        
+                        
+                       
+                    </tbody>
+                </table>
+            </div>
+            <div class="profile">
+                <div class="photo">
+                    <img src="./photo.jpg" alt="" srcset="">
+                </div>
+                <div class="details">
+                    <div class="playerName" id="playerName">Name</div>
+                    <div class="playerPoints" id="playerPoints">-</div>
+                    <div class="points">Points</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.2.0/mdb.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+    <script src="script.js"></script>
+    <script type="text/javascript" src=" https://cdn.datatables.net/buttons/1.2.4/js/dataTables.buttons.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/select/1.4.0/js/dataTables.select.min.js"></script>
+    <script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap4.min.js"></script>
+    
+</body>
+</html>
